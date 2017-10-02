@@ -1,0 +1,50 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="formChecker.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="customerBackend.php" id="order-form">
+      <table>
+        <tr>
+          <td class="description">Username:</td>
+          <td><input type="text" name="username"></input></td>
+        </tr>
+        <tr>
+          <td class="description">Password:</td>
+          <td><input type="password" name="password"></input></td>
+        </tr>
+        <tr>
+          <td class="description">Number of toasters - $25.00:</td>
+          <td><input type="number" name="toasters"></input></td>
+        </tr>
+        <tr>
+          <td class="description">Number of swiss army toasters - $180.00:</td>
+          <td><input type="number" name="swiss-army-toasters"></input></td>
+        </tr>
+        <tr>
+          <td class="description">Number of nuclear powered toasters - $60000000.00:</td>
+          <td><input type="number" name="nuclear-powered-toasters"></input></td>
+        </tr>
+        <tr>
+          <td class="description">Shipping type:</td>
+          <td>
+            <select name="shipping-type">
+              <option value="7-day">Free: 7-day</option>
+              <option value="overnight">$50.00: overnight</option>
+              <option value="3-day">$5.00: 3-day</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit">Submit Order</td>
+        <tr>
+      </table>
+    </form>
+    <button id="reset-button">Reset</button>
+  </div>
+</body>
+</html>

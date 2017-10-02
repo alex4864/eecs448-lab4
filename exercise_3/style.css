@@ -1,0 +1,22 @@
+html *{
+  font-family: "courier new";
+}
+
+.wrapper{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+table{
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td.description{
+  text-align: right;
+}
+
+input, select{
+  width: 10em;
+}
